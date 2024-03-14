@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mongo-test"
+version = "1.0.0"
+description = "teste"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tweepy = "^4.14.0"
+pymongo = "^4.6.2"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.28.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
